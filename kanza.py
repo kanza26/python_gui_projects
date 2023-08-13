@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from tkinter import *
 # For Opening Plot in the same window
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import numpy as np
+import numpy as np              
 
 # Function to plot vectors - for the button
 def plot_vectors():
@@ -90,8 +90,7 @@ root.state("zoomed")
 #bg_label.pack(fill="both", expand=True)
 
 
-vector_frame = tk.Frame(root, bg='#F5F5F5', bd=0, highlightthickness=5, highlightbackground='#0000FF')
-vector_frame.place(relx=0.20, rely=0.25, height=200, anchor=tk.CENTER)
+
 # Create a frame for the input vectors
 vector_frame = tk.Frame(root, bg='#F5F5F5', bd=0, highlightthickness=4, highlightbackground='#0000FF')
 vector_frame.place(relx=0.80, rely=0.45, height=290, anchor=tk.CENTER)
@@ -138,7 +137,7 @@ vector_b_z_entry = tk.Entry(vector_frame, width=7, font=("Arial", 16), justify="
 vector_b_z_entry.grid(row=3, column=5, padx=10)
 
 # Create a frame for the button
-button_frame = tk.Frame(root, bg='#F5F5F5', bd=0, highlightthickness=0)
+button_frame = tk.Frame(root, bg='#F5F5F5', bd=0, highlightthickness=0)                       
 button_frame.place(relx=0.9, rely=0.9, anchor=tk.SE)
 
 button3 = HoverButton(button_frame, font=("Times New Roman Bold", 30), text="Plot", bg='#0000FF', fg='white',
@@ -149,4 +148,4 @@ button3.pack()
 plot_frame = tk.Frame(root, bg='#EEEEE5', highlightthickness=4, highlightbackground='#0000FF')
 plot_frame.place(relx=0.31, rely=0.55, height=500, width=800, anchor=tk.CENTER)
 
-root.mainloop()
+root.mainloop()             
