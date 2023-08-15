@@ -1,3 +1,5 @@
+/* this program asks you for three cordinates of two vectors and then when you click on plot button it shows you
+dot product of the given two vectors in space */
 import matplotlib.pyplot as plt
 from tkinter import *
 # For Opening Plot in the same window
