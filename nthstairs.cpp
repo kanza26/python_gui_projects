@@ -3,16 +3,16 @@
 #include <cmath>
 using namespace std;
 int findWays(int n){
-    if(n<=0){
-        return 0;
+    if(n<=0){           // base case
+        return 0;         
     }
-    if(n==1){
+    if(n==1){      //base
         return 1;
     }
-    if(n==2){
+    if(n==2){       //base
         return 2;
     }
-    return findWays(n-1)+findWays(n-2);
+    return findWays(n-1)+findWays(n-2);           //recursive step
 }
 int n;
 int main(){
