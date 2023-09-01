@@ -1,3 +1,4 @@
+#fetching real time temperature data of different cities of pakistan and plotting a graph  
 import requests 
 from datetime import datetime
 import matplotlib.pyplot as plt
